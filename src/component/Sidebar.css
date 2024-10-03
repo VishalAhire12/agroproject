@@ -1,0 +1,193 @@
+/* Sidebar.css */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px; /* Adjust according to your navbar height */
+    width: 200px; /* Width of the sidebar */
+    height: calc(100vh - 60px); /* Full height minus navbar */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    overflow-y: auto; /* Scrollable content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+  
+  .sidebar-link:hover {
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .sidebar-icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+  }
+  /* src/component/pesticides.css */
+.sidebar {
+    width: 200px;
+    background: #f7f7f7;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card1 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px; /* Adjust as needed */
+  }
+  
+  .product-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+  }
+  
+  .view-details-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #0056b3;
+  }
+  /* src/component/pesticides.css */
+
+.pesticides-container {
+    display: flex;
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-height: 100vh; /* Full height to take up the screen */
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #343a40; /* Dark background for sidebar */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: sticky; /* Sticky sidebar */
+    top: 20px; /* Space from top */
+  }
+  
+  .sidebar h3 {
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background: #495057; /* Lighten on hover */
+  }
+  
+  .products {
+    flex-grow: 1;
+    padding: 15px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+  }
+  
+  .card1 {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: white; /* White background for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card1:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .product-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product-description {
+    margin: 10px 0;
+  }
+  
+  .rating {
+    margin: 10px 0;
+  }
+  
+  .view-details-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .view-details-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .pesticides-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .sidebar {
+      width: 100%; /* Full width for sidebar */
+      margin-right: 0; /* Remove margin */
+    }
+  }
+  

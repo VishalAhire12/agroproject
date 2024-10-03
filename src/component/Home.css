@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color:aliceblue;
+}
+
+/* Carousel Section */
+.carousel {
+  margin: 40px auto;
+  max-width: 1300px;
+  width: 100%;
+  border-radius: 25px; /* Apply border-radius to the entire carousel */
+  overflow: hidden; /* Ensure child elements adhere to the rounded corners */
+  box-shadow: 0 4px 8px rgba(9, 212, 158, 0.1); /* Optional: add shadow for a lifted effect */
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-height: 500px; /* Increased height for larger view */
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.carousel-indicators button {
+  background-color: #333;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Increased opacity for better readability */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/* Card Section */
+.custom-card {
+  margin: 30px auto;
+  max-width: 1000px; /* Center the card with a larger max-width */
+  box-shadow: 0 4px 8px rgba(128, 9, 9, 0.1);
+  background-color: #fff;
+  
+}
+
+.custom-card-body {
+  display:flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-card-content {
+  padding: 2px;
+  
+  background-color: #f9f9f9;
+}
+
+.custom-card-title {
+  font-size: 1.8rem; /* Increased font size for better readability */
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+  margin-left: 80px;
+}
+
+.custom-card-text {
+  font-size: 1.1rem; /* Increased font size for better readability */
+  color: #666;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+.custom-image {
+  width: 100%;
+  max-width: 550px; /* Adjusted max width for better layout */
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.card2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 30px;
+  margin-left: 50px;
+  margin-right:10px;
+}
+
+/* Adjust carousel for laptop view */
+@media (min-width: 992px) {
+  .carousel-item img {
+    max-height: 600px; /* Adjust for larger screens */
+  }
+
+  .custom-card-title {
+    font-size: 2rem; /* Larger title font for bigger screens */
+  }
+
+  .custom-card-text {
+    font-size: 1.2rem; /* Larger text font for bigger screens */
+  }
+}
+.custom-video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+
+}
+/* Flexbox for the card2 container */
+.custom-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Adds space between video and content */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color for card section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a card effect */
+  margin-bottom: 20px;
+}
+
+/* Style for the video section */
+.custom-video-section {
+  flex: 1; /* Video takes up equal space as the content */
+  max-width: 45%; /* Limit the video width */
+}
+
+/* Style for the content section */
+.custom-content-section {
+  flex: 1; /* Content takes up equal space as the video */
+  max-width: 45%; /* Limit the content width */
+  padding-left: 20px; /* Space between video and content */
+}
+
+/* Video element style */
+.custom-video {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Style for the title */
+.custom-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the text */
+.custom-card-text {
+  font-size: 1rem;
+  color: #333;
+}
+/* Styles for the second card */
+.card3 {
+  margin-top: 20px;
+}
+
+.custom-flex-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-image-section-2 {
+  flex: 1;
+}
+
+.custom-image-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-content-section-2 {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.custom-card-title-2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-card-text-2 {
+  font-size: 1rem;
+  color: #333;
+}
